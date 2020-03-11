@@ -37,4 +37,14 @@ public interface UserDao {
      * 查询总用户数
      */
     int findTotal();
+
+    /**
+     * 根据传入参数条件查询
+     */
+    List<User> findByCondition(User user);
+
+    /**
+     * 传入集合
+     */
+    List<User> findByIntegerList(List<Integer> list);
 }

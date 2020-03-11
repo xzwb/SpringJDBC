@@ -41,4 +41,22 @@
     <select id="findTotal" resultType="Integer">
         select count(id) from user;
     </select>
+
+    <!-- 根据条件查询 -->
+    <select id="findByCondition" resultType="mybatis.pojo.User" parameterType="mybatis.pojo.User">
+        select *from user where 1=1
+        <if test="username != null">
+           and username = #{username}
+        </if>
+    </select>
+
+    <!-- 根据传入的集合查询 -->
+    <select id="findByIntegerList" resultType="mybatis.pojo.User" parameterType="Integer">
+        select *from user 
+        <where>
+            <foreach collection="list" open="and id in(" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </select>
 </mapper>

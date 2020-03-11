@@ -25,11 +25,21 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
+    public List<User> findByCondition(User user) {
+        return null;
+    }
+
+    @Override
     public void saveUser(User user) {
         SqlSession session = sqlSessionFactory.openSession();
         session.insert("mybatis.dao.UserDao.saveUser", user);
         session.commit();
         session.close();
+    }
+
+    @Override
+    public List<User> findByIntegerList(List<Integer> list) {
+        return null;
     }
 
     @Override
