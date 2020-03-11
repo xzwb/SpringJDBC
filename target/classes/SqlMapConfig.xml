@@ -26,6 +26,7 @@
         <mapper resource="mybatis/dao/UserDao.xml"/>
         <mapper class="mybatis.dao.UserAnnotationDao"/>
         <mapper resource="mybatis/dao/IUserDao.xml"/>
+        <mapper resource="mybatis/dao/AccountDao.xml"/>
     </mappers>
 
 </configuration>
