@@ -30,7 +30,9 @@ public class MybatisTest1 {
         // 获取dao代理对象
         UserDao dao = sqlSession.getMapper(UserDao.class);
         // 执行保存
+        System.out.println(user);
         dao.saveUser(user);
+        System.out.println(user);
         sqlSession.commit();
         in.close();
         sqlSession.close();
