@@ -5,7 +5,11 @@
 
 <mapper namespace="mybatis.dao.User1Dao">
     <select id="findById" parameterType="int" resultType="mybatis.pojo.User1">
+
+        insert into t_user values(1, 'yyf');
+        rollback;
         select *from t_user where id = #{id};
+
     </select>
 
 </mapper>
