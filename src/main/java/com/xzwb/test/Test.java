@@ -11,8 +11,9 @@ public class Test {
         User user = new User();
         user.setId(1);
         user.setName("yyf");
-//        user.setAddress("1111");
-        userMapper.insertUser(user);
+        user.setAddress("1111");
+//        userMapper.insertUser(user);
+        userMapper.insertUser1(user, 2);
         session.commit();
         session.close();
     }

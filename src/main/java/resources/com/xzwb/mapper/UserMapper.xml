@@ -6,4 +6,8 @@
     <insert id="insertUser" parameterType="user">
         insert into user values(#{name}, #{id}, #{address});
     </insert>
+
+    <insert id="insertUser1">
+        insert into user values(#{user.name}, #{id}, #{user.address});
+    </insert>
 </mapper>
