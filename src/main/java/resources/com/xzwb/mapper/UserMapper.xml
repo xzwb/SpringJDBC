@@ -10,4 +10,8 @@
     <insert id="insertUser1">
         insert into user values(#{user.name}, #{id}, #{user.address});
     </insert>
+
+    <select id="selectUser" resultType="user">
+        select *from user;
+    </select>
 </mapper>
