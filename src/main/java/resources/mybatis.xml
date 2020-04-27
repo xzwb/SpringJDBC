@@ -14,6 +14,7 @@
         <setting name="lazyLoadingEnabled" value="true"/>
     </settings>
     <typeAliases>
-        <package name="springMybatis.pojo"/>
+<!--        <package name="springMybatis.pojo"/>-->
+        <package name="shiwu.pojo"/>
     </typeAliases>
 </configuration>
