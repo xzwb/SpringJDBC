@@ -1,6 +1,7 @@
 package shiwu.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -8,6 +9,7 @@ import shiwu.mapper.RoleMapper;
 import shiwu.pojo.Role;
 import shiwu.service.RoleService;
 
+@Service
 public class RoleServiceImpl implements RoleService {
     @Autowired
     private RoleMapper roleMapper;
